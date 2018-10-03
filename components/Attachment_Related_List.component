@@ -1,0 +1,15 @@
+<apex:component controller="OppAttachmentsRelatedListController">
+ <apex:pageBlock title="Case Comments" mode="new" >    
+        <apex:form >
+            <!--<apex:commandButton value="Save" action="{!customSave}"/>-->
+                <apex:pageBlockTable value="{!notesAndAttachments}" var="attachedItem">   
+             <!--       <apex:column >
+                        <apex:inputcheckbox value="{!index.published}"/> 
+                    </apex:column>-->
+                    <apex:column value="{!attachedItem.RecordType}"/>
+                    <apex:column value="{!attachedItem.Title}"/>
+               </apex:pageblockTable>
+        </apex:form>
+    </apex:pageBlock>
+
+</apex:component>

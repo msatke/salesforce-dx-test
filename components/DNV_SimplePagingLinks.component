@@ -1,0 +1,26 @@
+<apex:component id="DNV_SimplePagingLinks" controller="DNV_OpportunityAttachmentListController">
+    <style>
+                .pagingButtons {
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                    text-align: right;
+                }
+                a.blueLink {
+                    color: #015ba7;
+                    text-decoration: none;
+                }
+                .greyedLink {
+                    color: #999;
+                    text-decoration: none;
+                }
+            </style>
+    <div class="pagingButtons">
+        <apex:outputPanel rendered="{!pagination.recordTotalCount > pagination.recordsPerPage}">
+            <apex:commandLink styleClass="blueLink" action="{!pagination.goToPreviousPage}" value="<PreviousPage" rendered="{!pagination.previousPageAllowed}" />
+            <apex:outputText styleClass="greyedLink" value="<PreviousPage" rendered="{!pagination.previousPageAllowed == FALSE}" />
+            <apex:outputText styleClass="greyedLink" value=" | "/>
+            <apex:commandLink styleClass="blueLink" action="{!pagination.goToNextPage}" value="Next Page>" rendered="{!pagination.nextPageAllowed}" />
+            <apex:outputText styleClass="greyedLink" value="Next Page>" rendered="{!pagination.nextPageAllowed == FALSE}"/>
+        </apex:outputPanel>
+    </div>
+</apex:component>

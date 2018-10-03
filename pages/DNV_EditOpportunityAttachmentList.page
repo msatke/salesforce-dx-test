@@ -1,0 +1,24 @@
+<apex:page id="DNV_EditOpportunityAttachmentList"  controller="DNV_OpportunityAttachmentListController" sidebar="true" tabStyle="Opportunity">
+
+    <apex:sectionHeader title="Opportunity Attachments" subtitle="Mark Attachments as Contracts" />
+
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageMessages />
+            <apex:pageBlockButtons rendered="{!combinedAttachmentWrappers.size > 0}" >
+                <apex:commandButton value="Mark Selected Contracts" action="{!saveMarkedContracts}"/>
+                <apex:commandButton action="{!navigateBack}" value="Cancel"/>
+            </apex:pageBlockButtons>
+            <c:DNV_SimplePagingLinks />
+            <apex:pageBlockTable value="{!combinedAttachmentWrappers}" var="attachmentWrapper" rendered="{!combinedAttachmentWrappers.size > 0}">
+                <apex:column headerValue="Select Contracts">
+                    <apex:inputCheckbox value="{!attachmentWrapper.isContract}" />
+                </apex:column>
+                <apex:column headerValue="Type" value="{!attachmentWrapper.attachment.RecordType}" />
+                <apex:column headerValue="Title" value="{!attachmentWrapper.attachment.Title}"/>
+            </apex:pageBlockTable>
+            <apex:outputText rendered="{!combinedAttachmentWrappers.size < 1}" value="No attachments to mark them as Contracts" />
+            <c:DNV_SimplePagingLinks />
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
