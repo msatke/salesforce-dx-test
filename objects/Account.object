@@ -156,7 +156,7 @@
         <fullName>Gearset_Test__c</fullName>
         <externalId>false</externalId>
         <label>Gearset Test</label>
-        <length>100</length>
+        <length>150</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
