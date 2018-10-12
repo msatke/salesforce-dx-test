@@ -31,6 +31,10 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>orderID__c</fullName>
         <description>orderID</description>
@@ -105,7 +109,6 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>InDevelopment</deploymentStatus>
     <description>OrderDetails</description>
     <enableFeeds>false</enableFeeds>

@@ -31,6 +31,10 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>customerID__c</fullName>
         <description>customerID</description>
@@ -85,7 +89,6 @@
         <required>false</required>
         <type>DateTime</type>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>InDevelopment</deploymentStatus>
     <description>Orders</description>
     <enableFeeds>false</enableFeeds>

@@ -11,6 +11,10 @@
         <actionName>SaveEdit</actionName>
         <type>Default</type>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
 </CustomObject>

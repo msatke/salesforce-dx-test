@@ -39,6 +39,10 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>CompletionDate</fullName>
         <trackFeedHistory>false</trackFeedHistory>

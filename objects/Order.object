@@ -55,6 +55,10 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>AccountId</fullName>
         <trackHistory>false</trackHistory>
@@ -190,7 +194,10 @@
     </fields>
     <fields>
         <fullName>Type</fullName>
-        <trackHistory>true</trackHistory>
+        <picklist>
+            <sorted>false</sorted>
+        </picklist>
+        
         <type>Picklist</type>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>

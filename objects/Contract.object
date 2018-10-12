@@ -47,6 +47,10 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>AccountId</fullName>
         <trackHistory>true</trackHistory>
@@ -131,7 +135,23 @@
     </fields>
     <fields>
         <fullName>Status</fullName>
-        <trackHistory>true</trackHistory>
+        <picklist>
+            <picklistValues>
+                <fullName>In Approval Process</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Activated</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Draft</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        
         <type>Picklist</type>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>

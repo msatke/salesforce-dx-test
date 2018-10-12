@@ -31,6 +31,10 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>id__c</fullName>
         <description>id</description>
@@ -60,7 +64,6 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>InDevelopment</deploymentStatus>
     <description>PaymentMechanisms</description>
     <enableFeeds>false</enableFeeds>

@@ -31,6 +31,10 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>Account_Connector__c</fullName>
         <externalDeveloperName>userID</externalDeveloperName>
@@ -144,7 +148,6 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>InDevelopment</deploymentStatus>
     <description>Payments</description>
     <enableFeeds>false</enableFeeds>

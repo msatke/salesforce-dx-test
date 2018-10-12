@@ -39,6 +39,10 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
     <fields>
         <fullName>Attachment__c</fullName>
         <externalId>false</externalId>
@@ -113,25 +117,6 @@
         <type>DateTime</type>
     </fields>
     <fields>
-        <fullName>Type__c</fullName>
-        <externalId>false</externalId>
-        <label>Type</label>
-        <required>true</required>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Contract</fullName>
-                    <default>true</default>
-                    <label>Contract</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>View__c</fullName>
         <externalId>false</externalId>
         <formula>HYPERLINK("/servlet/servlet.FileDownload?file=" + Attachment__c, "View")</formula>
@@ -142,12 +127,27 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Contract</fullName>
+                <default>true</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
@@ -162,7 +162,6 @@
     <pluralLabel>Contracts</pluralLabel>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
     <webLinks>
         <fullName>Add_Contract</fullName>
         <availability>online</availability>

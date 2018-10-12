@@ -25,6 +25,9 @@
     </actionOverrides>
     <fields>
         <fullName>CompetitorName</fullName>
+        <picklist>
+            <sorted>false</sorted>
+        </picklist>
         <type>Picklist</type>
     </fields>
     <enableFeeds>false</enableFeeds>
