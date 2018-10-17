@@ -197,7 +197,7 @@
         <picklist>
             <sorted>false</sorted>
         </picklist>
-        
+        <trackHistory>true</trackHistory>
         <type>Picklist</type>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
